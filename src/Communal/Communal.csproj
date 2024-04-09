@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <PackageId>Communal</PackageId>
         <Version>0.1.0</Version>
         <Description>
@@ -15,6 +15,11 @@
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
         <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.3" />
         <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Api\Infrastructure\" />
+      <Folder Include="Application\Configurations\" />
     </ItemGroup>
 
 </Project>
